@@ -6,8 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-module.exports = router;
-
 /* GET hello World. */
 router.get('/helloWorld', function(req, res, next) {
 	if(false)
@@ -19,9 +17,6 @@ router.get('/helloWorld', function(req, res, next) {
 		next();
 	}
 });
-
-module.exports = router;
-
 
 router.get('/helloWorld', function(req, res, next) {
 	res.render('helloWorld', { title: 'Hi Kalgi here' });
